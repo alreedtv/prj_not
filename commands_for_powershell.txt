@@ -1,2 +1,4 @@
+Запустите PowerShell от имени администратора.
+Скопируйте по одной команде за раз и вставьте в командный интерфейс PowerShell, нажмите Enter. Дайте согласие на установку и изменение политик("да", "да для всех"):
 Install-Module -Name BurntToast
 set-executionpolicy unrestricted
