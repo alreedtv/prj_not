@@ -94,7 +94,7 @@
   <Actions Context="Author">
     <Exec>
       <Command>powershell.exe</Command>
-      <Arguments>-windowStyle hidden -File "C:\prj_not.ps1"</Arguments>
+      <Arguments>-windowStyle hidden -File "C:\PRJ_Notification\prj_not.ps1"</Arguments>
     </Exec>
   </Actions>
 </Task>
