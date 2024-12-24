@@ -10,5 +10,7 @@ curl -o C:\PRJ_Notification\wallpaper.png "https://raw.githubusercontent.com/alr
 @echo Файл wallpaper.png загружен
 schtasks /create /ru "Администратор ОПС" /rp FsO28821 /sc daily /tn ScheduledWLPPR_UPD /tr "winget update --all" /st 22:25 /np /rl HIGHEST
 powershell write-host -BackgroundColor White -ForegroundColor Black Установлено ежедневное обновление обоев.
-
+powershell write-host -BackgroundColor Yellow -ForegroundColor Black Спасибо, что выбрали ReedTech! Всего доброго!
+@pause
+exit
 
