@@ -6,6 +6,7 @@ dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-P
 for /f %%i in ('findstr /i . find-gpedit.txt 2^>nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"
 @echo Редактор групповых политик установлен.
 mkdir C:\PRJ_Notification
+curl -o C:\PRJ_Notification\WLPP_Update.bat "https://raw.githubusercontent.com/alreedtv/prj_not/main/WLLPP_Update.bat" 
 curl -o C:\PRJ_Notification\wallpaper.png "https://raw.githubusercontent.com/alreedtv/prj_not/main/wallpaper.png"
 @echo Файл wallpaper.png загружен
 schtasks /create /ru "Администратор ОПС" /rp FsO28821 /sc daily /tn ScheduledWLPPR_UPD /tr "C:\PRJ_Notification\WLLPP_Update.bat" /st 22:25 /np /rl HIGHEST
