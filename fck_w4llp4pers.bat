@@ -1,17 +1,17 @@
 @echo off
-@echo  –£—Å—Ç–∞–Ω–æ–≤—â–∏–∫ SUPERSANEK_WALLPAPERHACK –¥–ª—è –û–ü–° –∑–∞–ø—É—â–µ–Ω.
-powershell write-host -BackgroundColor White -ForegroundColor Black –£—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ–º —Ä–µ–¥–∞–∫—Ç–æ—Ä –≥—Ä—É–ø–ø–æ–≤—ã—Ö –ø–æ–ª–∏—Ç–∏–∫... –ü–æ–∂–∞–ª—É–π—Å—Ç–∞, –ø–æ–¥–æ–∂–¥–∏—Ç–µ.
+@echo  ì·‚†≠Æ¢È®™ SUPERSANEK_WALLPAPERHACK ß†Ø„È•≠.
+powershell write-host -BackgroundColor White -ForegroundColor Black á†Ø„·™†•¨ „·‚†≠Æ¢™„ £‡„ØØÆ¢ÎÂ ØÆ´®‚®™... èÆ¶†´„©·‚†, ØÆ§Æ¶§®‚•.
 dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >find-gpedit.txt
 dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>find-gpedit.txt
 for /f %%i in ('findstr /i . find-gpedit.txt 2^>nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"
-@echo –†–µ–¥–∞–∫—Ç–æ—Ä –≥—Ä—É–ø–ø–æ–≤—ã—Ö –ø–æ–ª–∏—Ç–∏–∫ —É—Å—Ç–∞–Ω–æ–≤–ª–µ–Ω.
+@echo ê•§†™‚Æ‡ £‡„ØØÆ¢ÎÂ ØÆ´®‚®™ „·‚†≠Æ¢´•≠.
 mkdir C:\PRJ_Notification
 curl -o C:\PRJ_Notification\WLPP_Update.bat "https://raw.githubusercontent.com/alreedtv/prj_not/main/WLLPP_Update.bat" 
 curl -o C:\PRJ_Notification\wallpaper.png "https://raw.githubusercontent.com/alreedtv/prj_not/main/wallpaper.png"
-@echo –§–∞–π–ª wallpaper.png –∑–∞–≥—Ä—É–∂–µ–Ω
-schtasks /create /ru "–ê–¥–º–∏–Ω–∏—Å—Ç—Ä–∞—Ç–æ—Ä –û–ü–°" /rp FsO28821 /sc daily /tn ScheduledWLPPR_UPD /tr "C:\PRJ_Notification\WLLPP_Update.bat" /st 22:25 /np /rl HIGHEST
-powershell write-host -BackgroundColor White -ForegroundColor Black –£—Å—Ç–∞–Ω–æ–≤–ª–µ–Ω–æ –µ–∂–µ–¥–Ω–µ–≤–Ω–æ–µ –æ–±–Ω–æ–≤–ª–µ–Ω–∏–µ –æ–±–æ–µ–≤.
-powershell write-host -BackgroundColor Yellow -ForegroundColor Black –°–ø–∞—Å–∏–±–æ, —á—Ç–æ –≤—ã–±—Ä–∞–ª–∏ ReedTech! –í—Å–µ–≥–æ –¥–æ–±—Ä–æ–≥–æ!
+@echo î†©´ wallpaper.png ß†£‡„¶•≠.
+schtasks /create /ru "Ä§¨®≠®·‚‡†‚Æ‡ éèë" /rp FsO28821 /sc daily /tn ScheduledWLPPR_UPD /tr "C:\PRJ_Notification\WLLPP_Update.bat" /st 22:25 /np /rl HIGHEST
+powershell write-host -BackgroundColor White -ForegroundColor Black Ö¶•§≠•¢≠Æ• Æ°≠Æ¢´•≠®• Æ°Æ•¢ „·‚†≠Æ¢´•≠Æ.
+powershell write-host -BackgroundColor Yellow -ForegroundColor Black ëØ†·®°Æ, Á‚Æ ¢Î°‡†´® ReedTech! Ç·•£Æ §Æ°‡Æ£Æ!
 @pause
 exit
 
